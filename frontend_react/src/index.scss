@@ -1,0 +1,20 @@
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-light-color: #39a0f0;
+  --primary-main-color: #1c6ca3;
+  --secondary-color: #0e4d78;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #8191ac;
+  --brown-color: #46364a;
+  --white-color: #f7f7fb;
+  --background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
