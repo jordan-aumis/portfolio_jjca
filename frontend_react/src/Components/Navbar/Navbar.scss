@@ -4,13 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--background-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
 }
@@ -34,9 +31,8 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-
   list-style: none;
 
   li {
@@ -55,9 +51,8 @@
     }
 
     a {
-      color: var(--gray-color);
+      color: var(--grey-color);
       text-decoration: none;
-      flex-direction: column;
 
       text-transform: uppercase;
       font-weight: 500;
@@ -65,13 +60,13 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: var(--secondary-color);
+        color: var(--primary-light-color);
       }
     }
 
     &:hover {
       div {
-        background: var(--secondary-color);
+        background: var(--primary-light-color);
       }
     }
   }
@@ -116,7 +111,7 @@
     align-items: flex-end;
     flex-direction: column;
 
-    background: url('../../assets/bgWhite.png');
+ 
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;

@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
+    "react/no-array-index-key": 0,
     "import/prefer-default-export": 0,
     "react/react-in-jsx-scope": 0,
   },

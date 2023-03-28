@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import "./Navbar.scss";
 
-function Navbar() {
+export function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -39,5 +39,3 @@ function Navbar() {
     </nav>
   );
 }
-
-export default Navbar;
