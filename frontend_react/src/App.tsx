@@ -1,7 +1,13 @@
 import "./App.scss";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Header } from "./Components/Header/Header";
-import { AboutMe, MyWorks, Contact, Skills } from "./Components/Content/index";
+import {
+  AboutMe,
+  MyWorks,
+  Contact,
+  Skills,
+  MyJourney,
+} from "./Components/Content/index";
 
 export function App() {
   return (
@@ -9,6 +15,7 @@ export function App() {
       <Navbar />
       <Header />
       <AboutMe />
+      <MyJourney />
       <MyWorks />
       <Skills />
       <Contact />

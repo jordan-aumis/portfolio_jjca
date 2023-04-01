@@ -1,0 +1,75 @@
+.my_journey{
+  padding: 4rem 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.quali {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.education{
+  width: 40%;
+}
+
+.experience{
+  width: 40%;
+}
+
+.qualification_title{
+  padding-bottom: 3rem;
+  font-size: 20px;
+  color: var(--white-color)
+}
+
+.timeline_item{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.circle_dot_qual{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1rem;
+  width: 1rem;
+  border: 2px solid var(--primary-light-color);
+  border-radius: 50%;
+  background-color: var(--primary-light-color);
+  transition: .3s;
+}
+
+.timeline_item::before{
+  content: "";
+  width: 1px;
+  position: absolute;
+  left: .48rem;
+  top: 0;
+  height: 100%;
+  background-color: var(--primary-main-color);
+}
+
+.timeline_item:hover .circle_dot_qual{
+  background-color: var(--background-color);
+}
+
+span{
+  color: var(--primary-light-color);
+}
+
+// p{
+//   color: white
+// }
+
+h3{
+  color: white
+}
+
