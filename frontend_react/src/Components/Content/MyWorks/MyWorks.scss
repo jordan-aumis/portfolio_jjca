@@ -1,11 +1,68 @@
-.buttons-section{
+.filter-section{
   width: 100%;
   display: flex;
   justify-content: center;
+  
+  .buttons-container{
+    margin-top: 3rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      color: var(--white-color);
+      background-color: var(--background-color);
+      padding: 8px;
+      cursor: pointer;
+      border: 0px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 8%;
+      
+      &:hover{
+        background-color: var(--primary-main-color);
+        transition: .6s;
+      }
+    }
+  }
 }
 
-button{
-  color: var(--white-color);
-  background-color: var(--background-color);
-  border: 0px;
+.my-works{
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 1.8rem;
+  justify-content: center;
+  padding-top: 2rem;
 }
+
+img{
+  opacity: 0.5;
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  display: inline-block;
+  color: var(--primary-light-color);
+  text-decoration: none;
+}
+
+.work-card{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box-color);
+  padding: 1.25rem;
+  height: auto;
+  border-radius: .5rem;
+}
+
+.portfolio-item-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.details-info{
+  display: none;
+}
+
